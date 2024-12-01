@@ -1,0 +1,15 @@
+{
+        "dockerComposeFile": ["docker-compose.yml"],
+        "service": "app",
+	"workspaceFolder": "/workspaces",
+    
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ritwickdey.liveserver"
+			]
+		}
+	},
+
+	"postCreateCommand": "sudo chown -R vscode:vscode /workspaces"
+}
